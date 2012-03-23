@@ -1,3 +1,5 @@
+/* DEVELOP */
+
 (function ($){
   $.fn.eqHeightCols = function() {
     return this.each(function() {
