@@ -30,7 +30,7 @@ jQuery(function($) {
   
 });
 
-Suggested HTML structure (doesn't have to be a div!)
+Suggested HTML structure (obviously, it doesn't have to be div based markup!)
   
 /*
   <div class="eq-height-container">

@@ -7,6 +7,10 @@
 
 (function(b,c){var $=b.jQuery||b.Cowboy||(b.Cowboy={}),a;$.throttle=a=function(e,f,j,i){var h,d=0;if(typeof f!=="boolean"){i=j;j=f;f=c}function g(){var o=this,m=+new Date()-d,n=arguments;function l(){d=+new Date();j.apply(o,n)}function k(){h=c}if(i&&!h){l()}h&&clearTimeout(h);if(i===c&&m>e){l()}else{if(f!==true){h=setTimeout(i?k:l,i===c?e-m:e)}}}if($.guid){g.guid=j.guid=j.guid||$.guid++}return g};})(this);
 
+/** Send analytics reports on scroll event
+  * @param  step            integer: number of pixels between scroll events (500 = every 500px)
+  * @param  reportFrequency integer: how often to report the scroll event (500 = twice per second)
+ **/
 (function(){
  
   $.fn.scrollAnalytics = function(vals){
